@@ -1,0 +1,17 @@
+{
+  "房建": {
+    "total_tables": 557,
+    "quota_like_tables": 0,
+    "file_size_kb": 1649
+  },
+  "装饰": {
+    "total_tables": 423,
+    "quota_like_tables": 2,
+    "file_size_kb": 1276
+  },
+  "市政": {
+    "total_tables": 1014,
+    "quota_like_tables": 5,
+    "file_size_kb": 2975
+  }
+}
