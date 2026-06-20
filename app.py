@@ -3,7 +3,7 @@
 工程量清单检查器 — Web 版
 用法：D:/python.exe -m streamlit run app.py
 """
-import sys, io, os, json, re, sqlite3
+import sys, io, os, json, re, sqlite3, traceback
 sys.path.insert(0, "D:/Lib/site-packages")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -28,7 +28,7 @@ with st.sidebar:
     model = st.selectbox("模型", ["deepseek-chat", "deepseek-reasoner"], index=0)
 
 # ---- tabs ----
-tab_ai, tab_check = st.tabs(["🤖 AI 识别", "🔍 规范检查"])
+tab_check, tab_ai = st.tabs(["🔍 规范检查", "🤖 AI 识别"])
 
 # ============================================================
 # TAB 1: AI OCR
@@ -119,7 +119,6 @@ with tab_check:
                     code = row[col_map["code"]].strip() if "code" in col_map else ""
                     name = row[col_map["name"]].strip() if "name" in col_map else ""
                     features = row[col_map["features"]].strip() if "features" in col_map else ""
-                    # Skip sub-headers and empty rows
                     if not code and name in ("nan", "", "本页小计", "合计"):
                         continue
                     if not code and not name:
@@ -168,50 +167,62 @@ with tab_check:
             detected = [std_map[p] for p in prefixes if p in std_map]
             st.info(f"📋 {len(user_items)} 项 | 类型: {', '.join(detected) if detected else '未知'} | {check_year}版 | {check_region}")
 
-            if check_year == "2013":
-                st.warning("⚠️ 当前数据库仅有 2024 版规范，2013 版结果可能不准确")
+            # === CHECK BUTTONS ===
+            st.subheader("🔍 规范检查")
 
-            # === 专业筛选 ===
-            section_map = {
-                "土方": ("0101",), "砌体": ("0104",), "混凝土": ("0105",),
-                "钢筋": ("010515",), "金属": ("0106",), "门窗": ("0108",),
-                "防水": ("0109",), "保温": ("0110",), "楼地面": ("0111",),
-                "墙柱面": ("0112",), "天棚": ("0113",), "涂料": ("0114",),
-                "其他装饰": ("0115",), "措施": ("0117",),
-            }
-            st.divider()
-            st.caption("筛选检查范围（不选=全部）")
-            cols = st.columns(7)
-            selected_sections = []
-            for i, (label, prefixes) in enumerate(section_map.items()):
-                with cols[i % 7]:
-                    if st.checkbox(label, key=f"sec_{label}"):
-                        selected_sections.extend(prefixes)
+            def run_engine(mode):
+                """Callback: store check mode and trigger engine in session_state."""
+                st.session_state["_run_mode"] = mode
 
-            # Filter user_items by selected sections
-            if selected_sections:
-                check_items = [it for it in user_items if any(it["code"].startswith(p) for p in selected_sections)]
+            b1, b2, b3, b4 = st.columns(4)
+            with b1: st.button("📋 特征检查", on_click=run_engine, args=("features",), key="_bc1", use_container_width=True)
+            with b2: st.button("📏 单位检查", on_click=run_engine, args=("units",), key="_bc2", use_container_width=True)
+            with b3: st.button("🔗 漏项检查", on_click=run_engine, args=("deps",), key="_bc3", use_container_width=True)
+            with b4: st.button("🔍 全检", on_click=run_engine, args=("all",), type="primary", key="_bc4", use_container_width=True)
+
+            # === 双维度筛选（分开两个 selectbox，不用 columns 避免 DOM bug）===
+            tag_conn = sqlite3.connect(os.path.join(os.path.dirname(__file__), "rules", "boq_checker.db"))
+            tag_conn.row_factory = sqlite3.Row
+            tag_cur = tag_conn.cursor()
+            tag_cur.execute("SELECT tag_name, tag_label FROM material_tags")
+            mat_opts = ["全部材料"] + [row["tag_label"] for row in tag_cur.fetchall()]
+            tag_cur.execute("SELECT tag_name, tag_label FROM work_tags")
+            work_opts = ["全部类别"] + [row["tag_label"] for row in tag_cur.fetchall()]
+            mat_label_to_name = {row["tag_label"]: row["tag_name"] for row in tag_cur.execute("SELECT tag_name, tag_label FROM material_tags")}
+            work_label_to_name = {row["tag_label"]: row["tag_name"] for row in tag_cur.execute("SELECT tag_name, tag_label FROM work_tags")}
+            tag_conn.close()
+
+            st.caption("筛选（可选，多选=取并集，跨维度=取交集）")
+            sel_mat = st.multiselect("🧱 材料", mat_opts[1:], placeholder="不选=全部", key="_sel_mat2")
+            sel_work = st.multiselect("📐 工程类别", work_opts[1:], placeholder="不选=全部", key="_sel_work2")
+
+            check_items = user_items
+            if sel_mat or sel_work:
+                tmp_conn = sqlite3.connect(os.path.join(os.path.dirname(__file__), "rules", "boq_checker.db"))
+                tmp_cur = tmp_conn.cursor()
+                allowed = None
+                if sel_mat:
+                    tags = [mat_label_to_name.get(m, "") for m in sel_mat]
+                    ph = ",".join("?" * len(tags))
+                    tmp_cur.execute(f"SELECT DISTINCT rule_code FROM rule_material_map rmm JOIN material_tags mt ON rmm.tag_id=mt.id WHERE mt.tag_name IN ({ph})", tags)
+                    allowed = {r[0][:9] for r in tmp_cur.fetchall()}
+                if sel_work:
+                    tags = [work_label_to_name.get(w, "") for w in sel_work]
+                    ph = ",".join("?" * len(tags))
+                    tmp_cur.execute(f"SELECT DISTINCT rule_code FROM rule_work_map rwm JOIN work_tags wt ON rwm.tag_id=wt.id WHERE wt.tag_name IN ({ph})", tags)
+                    wcodes = {r[0][:9] for r in tmp_cur.fetchall()}
+                    allowed = wcodes if allowed is None else allowed & wcodes
+                tmp_conn.close()
+                if allowed:
+                    check_items = [it for it in user_items if it["code"][:9] in allowed]
+                st.caption(f"筛选命中：{len(check_items)} / {len(user_items)} 项")
             else:
-                check_items = user_items
+                st.caption(f"未筛选：全部 {len(check_items)} 项")
 
-            # === THREE CHECK BUTTONS ===
-            st.subheader("🔍 选择检查类型")
-
-            b1, b2, b3 = st.columns(3)
-            with b1:
-                run_feat = st.button("📋 特征检查", type="primary", help="编码/名称缺失 + 项目特征是否完整")
-            with b2:
-                run_unit = st.button("📏 单位检查", help="计量单位是否与规范一致")
-            with b3:
-                run_dep = st.button("🔗 漏项检查", help="跨分部依赖：有A是否必须有B")
-
-            check_mode = None
-            if run_feat: check_mode = "features"
-            if run_unit: check_mode = "units"
-            if run_dep: check_mode = "deps"
+            check_mode = st.session_state.pop("_run_mode", None)
 
             if check_mode:
-                with st.spinner("检查中..."):
+                try:
                     fe = RuleEngine()
                     db_path = os.path.join(os.path.dirname(__file__), "rules", "boq_checker.db")
                     conn = sqlite3.connect(db_path)
@@ -219,14 +230,20 @@ with tab_check:
                     cur = conn.cursor()
 
                     yr = check_year
+                    yr_fallback = "2013" if yr == "2024" else "2024"
                     if detected:
-                        # Build LIKE patterns: %GB50854%2024%
-                        patterns = [f"%{s.split()[0]}%{yr}%" for s in detected]
-                        conditions = " OR ".join(["section LIKE ?"] * len(patterns))
-                        cur.execute(f"SELECT * FROM boq_rules WHERE {conditions}", patterns)
+                        patterns_all = []
+                        for s in detected:
+                            patterns_all.append(f"%{s.split()[0]}%{yr}%")
+                            patterns_all.append(f"%{s.split()[0]}%{yr_fallback}%")
+                        conds = " OR ".join(["section LIKE ?"] * len(patterns_all))
+                        cur.execute(f"SELECT * FROM boq_rules WHERE {conds}", patterns_all)
                     else:
-                        cur.execute(f"SELECT * FROM boq_rules WHERE section LIKE '%{yr}'")
+                        cur.execute(f"SELECT * FROM boq_rules WHERE section LIKE '%{yr}' OR section LIKE '%{yr_fallback}'")
+                    loaded_codes = set()
                     for row in cur.fetchall():
+                        if row["code"] in loaded_codes: continue
+                        loaded_codes.add(row["code"])
                         feats = json.loads(row["features"]) if row["features"] else []
                         fe.add_boq_rule(BOQItemRule(
                             code=row["code"], name=row["name"],
@@ -234,7 +251,7 @@ with tab_check:
                             calc_rule="", work_content=[], section=row["section"] or ""
                         ))
 
-                    if check_mode == "deps":
+                    if check_mode in ("deps", "all"):
                         cur.execute("SELECT * FROM dependency_rules")
                         for row in cur.fetchall():
                             fe.add_dependency(DependencyRule(
@@ -242,7 +259,6 @@ with tab_check:
                                 reason=row["reason"] or "", severity=row["severity"] or "warning",
                                 category=row["context"] or "general"
                             ))
-
                     conn.close()
 
                     if check_mode == "features":
@@ -251,87 +267,142 @@ with tab_check:
                         results = fe.check_units(check_items)
                     elif check_mode == "deps":
                         results = fe.check_dependencies(check_items)
-
-                    errs = [r for r in results if r.severity == "error"]
-                    warns = [r for r in results if r.severity == "warning"]
-
-                    st.success(f"完成：{len(errs)} 项需修改  {len(warns)} 项建议核对")
-
-                    if not results:
-                        st.info("未发现问题")
                     else:
-                        # Build row→item lookup
-                        item_by_row = {it["row"]: it for it in user_items}
-                        for r in sorted(results, key=lambda r: r.row or 999):
-                            it = item_by_row.get(r.row, {})
-                            icon = "🔴" if r.severity == "error" else "🟡"
-                            row_label = f"第{r.row}行" if r.row else ""
-                            name_label = it.get("name", "")[:20] if it else ""
-                            st.markdown(f"{icon} **{row_label} {r.code}** {name_label}  \n"
-                                       f"&nbsp;&nbsp;&nbsp;问题：{r.message}  \n"
-                                       f"&nbsp;&nbsp;&nbsp;建议：{r.suggestion}")
+                        results = fe.check_features(check_items) + fe.check_units(check_items) + fe.check_dependencies(check_items)
 
-                        # Build fixed Excel: fill suggestions directly into cells
-                        try:
-                            out_df = st.session_state.full_df.copy()
-                            # GTJ column layout (0-indexed): 0=序号 1=项目编码 3=项目名称 5=项目特征 7=计量单位
-                            features_col = 5
-                            unit_col = 7
-                            name_col = 3
+                    # Store results + Excel in session_state for external display
+                    st.session_state["_out_results"] = [{
+                        "severity": r.severity, "row": r.row, "code": r.code,
+                        "message": r.message, "suggestion": r.suggestion,
+                        "category": getattr(r, "category", "")
+                    } for r in results]
+                    st.session_state["_out_mode"] = check_mode
 
-                            filled = 0
-                            new_rows = 0
+                    # Build Excel in engine
+                    try:
+                        out_df = st.session_state.full_df.copy()
+                        if out_df.shape[1] < 8:
+                            raise ValueError(f"Excel列数不足 (需要8列GTJ格式，当前{out_df.shape[1]}列)")
+                        code_col, features_col, unit_col, name_col = 1, 5, 7, 3
+                        filled = 0
+                        for r in results:
+                            if not r.row: continue
+                            ri = r.row - 1
+                            if ri >= len(out_df): continue
+                            cat = getattr(r, "category", "")
+                            sug = r.suggestion or ""
+                            if cat == "漏填" and "规范要求填写" in sug:
+                                ft = sug.replace("规范要求填写：", "")
+                                if str(out_df.iloc[ri, features_col]) in ("nan", "", "-"):
+                                    out_df.iloc[ri, features_col] = ft
+                                    filled += 1
+                            elif cat == "列错" and "改为" in sug:
+                                out_df.iloc[ri, unit_col] = sug.split("改为 ")[1]
+                                filled += 1
+                        buf = io.BytesIO()
+                        out_df.to_excel(buf, index=False, header=False)
+                        st.session_state["_out_xlsx"] = buf.getvalue()
+                        st.session_state["_out_xlsx_label"] = f"⬇️ 下载修正后 Excel（{filled}处已填写）" if filled else "⬇️ 下载 Excel"
+                    except Exception as xlsx_err:
+                        st.session_state["_out_xlsx"] = None
+                        st.session_state["_out_xlsx_err"] = f"Excel生成跳过：{xlsx_err}"
 
-                            if check_mode in ("features", "units"):
-                                for r in results:
-                                    if not r.row: continue
-                                    ri = r.row - 1
-                                    if ri >= len(out_df): continue
-                                    if check_mode == "features":
-                                        if "规范要求填写" in (r.suggestion or ""):
-                                            fill_text = r.suggestion.replace("规范要求填写：", "")
-                                            current = str(out_df.iloc[ri, features_col])
-                                            if current in ("nan", "", "-"):
-                                                out_df.iloc[ri, features_col] = fill_text
-                                                filled += 1
-                                    elif check_mode == "units":
-                                        sug = r.suggestion or ""
-                                        if "改为" in sug:
-                                            out_df.iloc[ri, unit_col] = sug.split("改为 ")[1]
-                                            filled += 1
+                except Exception as e:
+                    st.session_state["_out_error"] = f"检查失败：{e}\n{traceback.format_exc()}"
 
-                            elif check_mode == "deps":
-                                seen = set()
-                                for r in results:
-                                    must_code = r.code
-                                    if must_code in seen: continue
-                                    seen.add(must_code)
-                                    rule = fe.boq_rules.get(must_code)
-                                    if rule:
-                                        new_row = {i: "" for i in range(out_df.shape[1])}
-                                        new_row[code_col] = f"{must_code}（建议补充）"
-                                        new_row[name_col] = rule.name
-                                        new_row[features_col] = "、".join(rule.required_features[:5]) if rule.required_features else ""
-                                        new_row[unit_col] = rule.unit
-                                        out_df = pd.concat([out_df, pd.DataFrame([new_row])], ignore_index=True)
-                                        new_rows += 1
+            # === 完整性扫描（放上面，独立于检查结果）===
+            if user_items:
+                st.divider()
+                st.caption("📋 完整性扫描：检查分部内是否有常见漏项（较慢，按需使用）")
+                comp_level = st.selectbox(
+                    "常见度阈值",
+                    [("仅核心项（推荐）", 3), ("核心+常见项", 2), ("全部含冷门", 1)],
+                    format_func=lambda x: x[0], key="_comp_lvl"
+                )
+                def run_completeness():
+                    st.session_state["_run_comp"] = True
+                st.button("📋 开始完整性扫描", on_click=run_completeness, key="_btn_comp")
 
-                            if check_mode == "deps":
-                                st.success(f"已新增 {new_rows} 个建议补充项（在 Excel 末尾）")
-                            else:
-                                st.success(f"已自动填入 {filled} 处")
+            if st.session_state.pop("_run_comp", False):
+                try:
+                    fe2 = RuleEngine()
+                    conn2 = sqlite3.connect(os.path.join(os.path.dirname(__file__), "rules", "boq_checker.db"))
+                    conn2.row_factory = sqlite3.Row
+                    cur2 = conn2.cursor()
+                    yr2 = check_year
+                    yr2b = "2013" if yr2 == "2024" else "2024"
+                    if detected:
+                        allp = []
+                        for s in detected:
+                            allp.append(f"%{s.split()[0]}%{yr2}%")
+                            allp.append(f"%{s.split()[0]}%{yr2b}%")
+                        conds2 = " OR ".join(["section LIKE ?"] * len(allp))
+                        cur2.execute(f"SELECT * FROM boq_rules WHERE {conds2}", allp)
+                    else:
+                        cur2.execute(f"SELECT * FROM boq_rules WHERE section LIKE '%{yr2}' OR section LIKE '%{yr2b}'")
+                    loaded2 = set()
+                    for row in cur2.fetchall():
+                        if row["code"] in loaded2: continue
+                        loaded2.add(row["code"])
+                        feats2 = json.loads(row["features"]) if row["features"] else []
+                        fe2.add_boq_rule(BOQItemRule(
+                            code=row["code"], name=row["name"],
+                            required_features=feats2, unit=row["unit"] or "",
+                            calc_rule="", work_content=[], section=row["section"] or ""
+                        ))
+                    conn2.close()
+                    lvl = st.session_state.get("_comp_lvl", ("", 2))
+                    comp_results = fe2.check_section_completeness(check_items, min_level=lvl[1] if isinstance(lvl, tuple) else 2)
+                    st.session_state["_comp_out"] = [{
+                        "severity": r.severity, "code": r.code,
+                        "message": r.message, "suggestion": r.suggestion
+                    } for r in comp_results]
+                except Exception as e:
+                    st.session_state["_comp_err"] = f"完整性扫描失败：{e}"
 
-                            st.divider()
-                            buf = io.BytesIO()
-                            out_df.to_excel(buf, index=False, header=False)
-                            label = f"⬇️ 下载修正后的 Excel"
-                            if check_mode == "deps" and new_rows > 0:
-                                label = f"⬇️ 下载修正后的 Excel（新增{new_rows}项）"
-                            elif filled > 0:
-                                label = f"⬇️ 下载修正后的 Excel（{filled}处已填写）"
-                            st.download_button(label, data=buf.getvalue(),
-                                               file_name=f"boq_{check_mode}_已修正.xlsx")
-                        except Exception as e:
-                            st.warning(f"Excel生成失败: {e}")
+            comp_out = st.session_state.pop("_comp_out", None)
+            comp_err = st.session_state.pop("_comp_err", None)
+            if comp_err:
+                st.error(comp_err)
+            if comp_out is not None:
+                c_warns = [r for r in comp_out if r["severity"] == "warning"]
+                c_infos = [r for r in comp_out if r["severity"] == "info"]
+                st.success(f"完整性扫描完成：{len(c_warns)} 核心项  {len(c_infos)} 常见项")
+                for r in comp_out:
+                    icon = "🟡" if r["severity"] == "warning" else "🔵"
+                    st.caption(f"{icon} {r['code']} — {r['message']}\n→ {r['suggestion']}")
 
-st.caption("💡 数据：GB50854-50862-2024 | 2025四川省定额 | 23条依赖规则")
+            # === DISPLAY RESULTS (outside try, no DOM issues) ===
+            out = st.session_state.pop("_out_results", None)
+            out_mode = st.session_state.pop("_out_mode", None)
+            out_err = st.session_state.pop("_out_error", None)
+            out_xlsx = st.session_state.pop("_out_xlsx", None)
+            out_xlsx_label = st.session_state.pop("_out_xlsx_label", "⬇️ 下载 Excel")
+            out_xlsx_err = st.session_state.pop("_out_xlsx_err", None)
+
+            if out_err:
+                st.error(out_err)
+
+            if out is not None:
+                errs = [r for r in out if r["severity"] == "error"]
+                warns = [r for r in out if r["severity"] == "warning"]
+                st.success(f"完成：{len(errs)} 项需修改  {len(warns)} 项建议核对")
+
+                for r in sorted(out, key=lambda r: r["row"] or 999):
+                    icon = "🔴" if r["severity"] == "error" else "🟡"
+                    rl = f"第{r['row']}行" if r["row"] else ""
+                    st.caption(f"{icon} {rl} {r['code']} — {r['message']}\n→ {r['suggestion']}")
+
+            # Download button always visible
+            if user_items:
+                st.divider()
+                if out_xlsx is not None:
+                    st.download_button(out_xlsx_label, data=out_xlsx, file_name=f"boq_{out_mode or 'check'}_已修正.xlsx", key="_dl")
+                else:
+                    buf = io.BytesIO()
+                    st.session_state.full_df.to_excel(buf, index=False, header=False)
+                    st.download_button("⬇️ 下载当前 Excel", data=buf.getvalue(), file_name="boq_当前.xlsx", key="_dl_raw")
+                if out_xlsx_err:
+                    st.caption(out_xlsx_err)
+
+st.caption("💡 数据：GB50854~50862 | 2013+2024规范 | 94条依赖规则 | 8材料+7工程类别标签")

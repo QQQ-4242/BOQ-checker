@@ -1,0 +1,1706 @@
+[
+  {
+    "text": "注：1挖土方平均厚度应按自然地面测量标高至设计地坪标高间的平均厚度确定。基础土方开挖深",
+    "section": "unknown",
+    "para_index": 648,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注 ：本表土的名称及其含义按国家标准《岩土工程勘察规范》GB 50021—2001(2009年版)定义。",
+    "section": "表 A. 1-1  土壤分类表",
+    "para_index": 680,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注 ：1虚方指未经碾压、堆积时间≤1年的土壤。",
+    "section": "表 A.1-2      土方体积折算系数表",
+    "para_index": 705,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1沟槽、基坑中土类别不同时，分别按其放坡起点、放坡系数，依不同土类别厚度加权平均计算。",
+    "section": "表 A. 1-3  放坡系数表",
+    "para_index": 737,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：本表按《全国统一建筑工程预算工程量计算规则》GJDGZ—101—95整理。",
+    "section": "表 A.1-4     基础施工所需工作面宽度计算表",
+    "para_index": 754,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1本表按《全国统一建筑工程预算工程量计算规则》GJDGZ—101—95整理。",
+    "section": "表 A.1-5     管沟施工每侧所需工作面宽度计算表",
+    "para_index": 777,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1挖石应按自然地面测量标高至设计地坪标高的平均厚度确定。基础石方开挖深度应按基础垫",
+    "section": "unknown",
+    "para_index": 839,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：本表依据国家标准《工程岩体分级标准》GB50218—94和《岩土工程勘察规范》GB 50021—2001 (2009年版)整理。",
+    "section": "unknown",
+    "para_index": 895,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：本表按建设部颁发《爆破工程消耗量定额》GYD—102—2008整理。",
+    "section": "表 A.2-2     石方体积折算系数表",
+    "para_index": 919,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1填方密实度要求，在无特殊要求情况下，项目特征可描述为满足设计和规范的要求。",
+    "section": "unknown",
+    "para_index": 975,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注浆地基",
+    "section": "unknown",
+    "para_index": 1385,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1地层情况按表A,1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层所占比",
+    "section": "unknown",
+    "para_index": 1424,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1地层情况按本规范表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层",
+    "section": "unknown",
+    "para_index": 1822,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1地层情况按本规范表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层",
+    "section": "unknown",
+    "para_index": 2023,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1地层情况按本规范表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层",
+    "section": "unknown",
+    "para_index": 2230,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1“砖基础”项目适用于各种类型砖基础：柱基础、墙基础、管道基础等。",
+    "section": "unknown",
+    "para_index": 2797,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1砌体内加筋、墙体拉结的制作、安装，应按本规范附录E中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 2956,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1石基础、石勒脚、石墙的划分：基础与勒脚应以设计室外地坪为界。勒脚与墙身应以设计室内  地面为界。石围墙内外地坪标高不同时，应以较低地坪标高为界，以下为基础；内外标高之差 为挡土墙时，挡土墙以上为墙身。",
+    "section": "unknown",
+    "para_index": 3406,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：除混凝土垫层应按本规范附录E中相关项目编码列项外，没有包括垫层要求的清单项目应按本表 垫层项目编码列项。",
+    "section": "表D.4  垫层(编号：010404)",
+    "para_index": 3442,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1有肋带形基础、无肋带形基础应按本表中相关项目列项，并注明肋高。",
+    "section": "unknown",
+    "para_index": 3582,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：混凝土种类：指清水混凝土、彩色混凝土等，如在同一地区既使用预拌(商品)混凝土，又允许现场 搅拌混凝土时，也应注明(下同)。",
+    "section": "unknown",
+    "para_index": 3670,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：短肢剪力墙是指截面厚度不大于300mm、各肢截面高度与厚度之比的最大值大于4但不大于8的 剪力墙；各肢截面高度与厚度之比的最大值不大于4的剪力墙按柱项目编码列项。",
+    "section": "unknown",
+    "para_index": 3843,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：现浇挑檐、天沟板、雨篷、阳台与板(包括屋面板、楼板)连接时，以外墙外边线为分界线；与圈梁(包 括其他梁)连接时，以梁外边线为分界线。外边线以外为挑檐、天沟、雨篷或阳台。",
+    "section": "unknown",
+    "para_index": 4001,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：整体楼梯(包括直形楼梯、弧形楼梯)水平投影面积包括休息平台、平台梁、斜梁和楼梯的连接梁。 当整体楼梯与现浇楼板无梯梁连接时，以楼梯的最后一个踏步边缘加300mm为界。",
+    "section": "unknown",
+    "para_index": 4059,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1现浇混凝土小型池槽、垫块、门框等，应按本表其他构件项目编码列项。 2架空式混凝土台阶，按现浇楼梯计算。",
+    "section": "unknown",
+    "para_index": 4288,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：以根计量，必须描述单件体积。",
+    "section": "unknown",
+    "para_index": 4406,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：以根计量，必须描述单件体积。",
+    "section": "unknown",
+    "para_index": 4498,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1以榀计量，必须描述单件体积。",
+    "section": "unknown",
+    "para_index": 4574,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1以块、套计量，必须描述单件体积。",
+    "section": "unknown",
+    "para_index": 4722,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：以块计量，必须描述单件体积。",
+    "section": "unknown",
+    "para_index": 4788,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1以块、根计量，必须描述单件体积 。",
+    "section": "unknown",
+    "para_index": 4848,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1现浇构件中伸出构件的锚固钢筋应并入钢筋工程量内。除设计(包括规范规定)标明的搭接 外，其他施工搭接不计算工程量，在综合单价中综合考虑。",
+    "section": "unknown",
+    "para_index": 5155,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：编制工程量清单时，如果设计未明确，其工程数量可为暂估量，实际工程量按现场签证数量计算。",
+    "section": "unknown",
+    "para_index": 5215,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：以榀计量，按标准图设计的应注明标准图代号，按非标准图设计的项目特征必须描述单榀屋架的 质量。",
+    "section": "unknown",
+    "para_index": 5393,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1实腹钢柱类型指十字、T、L、H形等。",
+    "section": "unknown",
+    "para_index": 5466,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1梁类型指H、L、T形、箱形、格构式等。",
+    "section": "unknown",
+    "para_index": 5548,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1钢板楼板上浇筑钢筋混凝土，其混凝土和钢筋应按本规范附录正混凝土及钢筋混凝土工程中 相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 5612,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1钢墙架项目包括墙架柱、墙架梁和连接杆件。",
+    "section": "unknown",
+    "para_index": 5861,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：抹灰钢丝网加固按本表中砌块墙钢丝网加固项目编码列项。",
+    "section": "unknown",
+    "para_index": 5991,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1屋架的跨度应以上、下弦中心线两交点之间的距离计算。",
+    "section": "unknown",
+    "para_index": 6069,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1木楼梯的栏杆(栏板)、扶手，应按本规范附录Q中的相关项目编码列项。 2以米计量，项目特征必须描述构件规格尺寸。",
+    "section": "unknown",
+    "para_index": 6175,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1木质门应区分镶板木门、企口木板门、实木装饰门、胶合板门、夹板装饰门、木纱门、全玻门(带 木质扇框)、木质半玻门(带木质扇框)等项目，分别编码列项。",
+    "section": "unknown",
+    "para_index": 6315,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1金属门应区分金属平开门。金属推拉门、金属地弹门、全玻门(带金属扇框)、金属半玻门(带扇",
+    "section": "unknown",
+    "para_index": 6405,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注 ：以橙计量，项日特征必须燕迷洞口只寸；以平方米达量，项导特惩可不燕述洞马只寸。",
+    "section": "unknown",
+    "para_index": 6451,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1特种门应区分冷藏门、冷冻间门、保温门、变电室门、隔音门、防射线门、人防门、金库门等项目， 分别编码列项。",
+    "section": "unknown",
+    "para_index": 6577,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1以樘计量，项回特征必须描述洞□尺寸，没有洞口尺寸必须迷门框或扇外围尺寸；以平方米 计量，项目特征可不描述洞口尺寸及框、扇的外围尺寸。",
+    "section": "unknown",
+    "para_index": 6757,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1木质窗应区分木百叶窗、木组合窗、木天窗、木固定窗、木装饰空花窗等项目，分别编码列项。",
+    "section": "unknown",
+    "para_index": 6846,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1金属窗应区分金属组合窗、防盗窗等项目，分别编码列项。",
+    "section": "unknown",
+    "para_index": 7030,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1以樘计量，项目特征必须描述洞口尺寸、门窗套展开宽度。",
+    "section": "unknown",
+    "para_index": 7259,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1窗帘若是双层，项目特征必须描述每层材质。 2窗帘以米计量，项目特征必须描述窗帘高度和宽。",
+    "section": "unknown",
+    "para_index": 7415,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1瓦屋面若是在木基层上铺瓦，项目特征不必描述粘结层砂浆的配合比，瓦屋面铺防水层，按本 附录表J.2屋面防水及其他中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 7593,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注 ：1屋面刚性层无钢筋，其钢筋项目特征不必描述。",
+    "section": "unknown",
+    "para_index": 7824,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1墙面防水搭接及附加层用量不另行计算，在综合单价中考虑。",
+    "section": "unknown",
+    "para_index": 7947,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1楼(地)面防水找平层按本规范附录L楼地面装饰工程“平面砂浆找平层”项目编码列项。 2楼(地)面防水搭接及附加层用量不另行计算，在综合单价中考虑。",
+    "section": "unknown",
+    "para_index": 8049,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1保温隔热装饰面层，按本规范附录L、M、N、P、Q中相关项目编码列项；仅做找平层按本规范附 录L楼地面装饰工程“平面砂浆找平层”或附录M墙、柱面装饰与隔断、幕墙工程“立面砂浆找 平层”项目编码列项。",
+    "section": "unknown",
+    "para_index": 8305,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：防腐踢脚线，应按本规范附录L楼地面装饰工程“踢脚线”项目编码列项。",
+    "section": "unknown",
+    "para_index": 8520,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：浸渍砖砌法指平砌、立砌。",
+    "section": "unknown",
+    "para_index": 8644,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1水泥砂浆面层处理是拉毛还是提浆压光应在面层做法要求中描述。",
+    "section": "unknown",
+    "para_index": 8836,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎石材项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 8949,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：本表项目中如涉及找平层，另按本附录表L.1找平层项目编码列项。",
+    "section": "unknown",
+    "para_index": 9027,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：石材、块料与粘结材料的结合面刷防渗材料的种类在防护材料种类中描述。",
+    "section": "unknown",
+    "para_index": 9311,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎石材项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 9550,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎石材项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 9680,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1楼梯、台阶牵边和侧面镶贴块料面层，不大于0.5m²的少量分散的楼地面镶贴块料面层，应按 本表执行。",
+    "section": "unknown",
+    "para_index": 9792,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1立面砂浆找平项目适用于仅做找平层的立面抹灰。",
+    "section": "unknown",
+    "para_index": 9902,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1砂浆找平项目适用于仅做找平层的柱(梁)面抹灰。",
+    "section": "unknown",
+    "para_index": 9994,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1零星项目抹石灰砂浆、水泥砂浆、混合砂浆、聚合物水泥砂浆、麻刀石灰浆、石膏灰浆等按本表  中零星项目一般抹灰编码列项，水刷石、斩假石、干粘石、假面砖等按本表中零星项目装饰抹灰 编码列项。",
+    "section": "unknown",
+    "para_index": 10101,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎块项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 10171,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎块项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 10262,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1在描述碎块项目的面层材料特征时可不用描述规格、颜色。",
+    "section": "unknown",
+    "para_index": 10313,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：幕墙钢骨架按本附录表M.4干挂石材钢骨架编码列项。",
+    "section": "unknown",
+    "para_index": 10529,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：采光天棚骨架不包括在本节中，应单独按本规范附录F相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 10948,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1木门油漆应区分木大门、单层木门、双层(一玻一纱)木门、双层(单裁口)木门、全玻自由门、半 玻自由门、装饰门及有框门或无框门等项目，分别编码列项。",
+    "section": "unknown",
+    "para_index": 11055,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1木窗油漆应区分单层木门、双层(一玻一纱)木窗、双层框扇(单裁口)木窗、双层框三层(二玻",
+    "section": "unknown",
+    "para_index": 11104,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：木扶手应区分带托板与不带托 板 ，分别编码列项，若是木栏杆带扶手，木扶手不应单独列项，应包 含在木栏杆油漆中。",
+    "section": "unknown",
+    "para_index": 11177,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：喷刷墙面涂料部位要注明内墙或外墙。",
+    "section": "unknown",
+    "para_index": 11639,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1砌体名称指墙、柱、水池等。",
+    "section": "unknown",
+    "para_index": 12659,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注 ：1以立方米作为计量单位时，可不描述构件的规格尺寸；以平方米作为计量单位时，则应描述构 件的厚度；以米作为计量单位时，则必须描述构件的规格尺寸。",
+    "section": "unknown",
+    "para_index": 12699,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1拆除木构件应按木梁、木柱，木楼梯、木屋架、承重木楼板等分别在构件名称中描述。",
+    "section": "unknown",
+    "para_index": 12740,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1单独拆除抹灰层应按本表中的项目编码列项。 2抹灰层种类可描述为一般拣灰或装饰抹灰。",
+    "section": "unknown",
+    "para_index": 12795,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1如仅拆除块料层，拆除的基层类型不用描述。",
+    "section": "unknown",
+    "para_index": 12838,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1基层类型的描述指砂浆层、防水层等。",
+    "section": "unknown",
+    "para_index": 12901,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1单独铲除油漆涂料裱糊面的工程按本表中的项目编码列项。",
+    "section": "unknown",
+    "para_index": 12978,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：以平方米计量，不用描述栏杆(板)的高度。",
+    "section": "unknown",
+    "para_index": 13034,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：门窗拆除以平方米计量，不用描述门窗的洞口尺寸。室内高度指室内楼地面至门窗的上边框。",
+    "section": "unknown",
+    "para_index": 13076,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：拆除部位的描述指门窗玻璃、隔断玻璃、墙玻璃、家具玻璃等。",
+    "section": "unknown",
+    "para_index": 13228,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：双轨窗帘轨拆除按双轨长度分别计算工程量。",
+    "section": "unknown",
+    "para_index": 13295,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1部位可描述为墙面或楼板。",
+    "section": "unknown",
+    "para_index": 13338,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1使用综合脚手架时，不再使用外脚手架、里脚手架等单项脚手架；综合脚手架适用于能够按“建 筑面积计算规则”计算建筑面积的建筑工程脚手架，不适用于房屋加层、构筑物及附属工程脚 手架。",
+    "section": "unknown",
+    "para_index": 13535,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1原槽浇灌的混凝土基础，不计算模板。",
+    "section": "unknown",
+    "para_index": 13911,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：1建筑物的檐口高度是指设计室外地坪至檐口滴水的高度(平屋顶系指屋面板底高度),突出主",
+    "section": "表S.3      垂直运输(011703)",
+    "para_index": 13947,
+    "standard": "GB50854"
+  },
+  {
+    "text": "注：四周如有镶边者，按镶边项目编码列项。",
+    "section": "unknown",
+    "para_index": 872,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：门窗套构件部位内容可分均侧板、顶板两种，构件形式内容可分为直线、曲线两种。",
+    "section": "unknown",
+    "para_index": 1132,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：栏杆包括面砖四角起木角线，侧柱，芯子砖，双面起木角线拖泥等。",
+    "section": "unknown",
+    "para_index": 1545,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：雀替又名梁垫。",
+    "section": "unknown",
+    "para_index": 2181,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：斗拱又名牌科。",
+    "section": "unknown",
+    "para_index": 2460,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1石作下垫层、找平层按现行国家标准《房屋建筑与装饰工程工程量计算规范》GB 50854相关项 目编码列项。",
+    "section": "unknown",
+    "para_index": 2886,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1石望柱的式样分为：几何头、龙凤头、莲瓣(花)头、素方头、狮子头等。 2栏板的式样分为：几何镂空、寻仗、罗汉等。",
+    "section": "unknown",
+    "para_index": 3087,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1项目以根为计量单位时，应在项目特征里描述单件规格。",
+    "section": "unknown",
+    "para_index": 3150,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1项目以樘为计量单位时，应在项目特征里描述框式样、组成件数及框的高度、长度、断面尺寸。 2项目以块为计量单位时，应在项目特征里描述单件规格尺寸。",
+    "section": "unknown",
+    "para_index": 3478,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1项目以米作为计量单位时，应在项目特征里描述石构件的断面规格尺寸。 2项目以平方米作为计量单位时，应在项目特征里描述石构件的厚度。",
+    "section": "unknown",
+    "para_index": 3626,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1项目以块、只、个为计量单位时，应在项目特征里描述单件体积。",
+    "section": "unknown",
+    "para_index": 4030,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1项目以平方米作为计量单位时，应在项目特征里描述石构件的厚度。 2项目以个作为计量单位时，应在项目特征里描述单件体积。",
+    "section": "unknown",
+    "para_index": 4138,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：正身椽飞及翼角椽飞以起翘处为分界。",
+    "section": "unknown",
+    "para_index": 4755,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：柱如果没有收分、侧脚、卷杀等要求时，不需对收分、侧脚、卷杀进行特征描述。",
+    "section": "unknown",
+    "para_index": 4905,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1矩形梁包含：扁作梁、承重、搭角梁、川等，圆形梁包含：搭角梁、川等。",
+    "section": "unknown",
+    "para_index": 5062,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：大木三件为檩(桁)条、额枋、垫板三种构件一次性立模板、同时浇筑混凝土时之名称。",
+    "section": "unknown",
+    "para_index": 5163,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注 ：鹅颈靠背又名吴王靠、美人靠，斗拱又名牌科。",
+    "section": "unknown",
+    "para_index": 5375,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注；1矩形梁包含：扁作梁、承重、搭角梁、川等。圆形梁包含：搭角梁、川等。 2驼峰又名眉川、骆驼川，老角梁又名老戗、龙背，仔角梁又名嫩戗、大刀木。",
+    "section": "unknown",
+    "para_index": 5570,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：预制混凝土板如有椽子，项目特征类中要对椽子进行形状、尺寸、间距描述，其体积并入板中。",
+    "section": "unknown",
+    "para_index": 5782,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1多角柱其规格按断面对角线计算。",
+    "section": "unknown",
+    "para_index": 6199,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1圆梁指用圆木制作的承受桁<檩)荷载的构件，包括川、三至九架梁，卷棚双步、四、六、八架梁等。 2矩形梁又称扁梁，指用枋木制作的承受桁(檩)荷载的构件，包括川、三至九架梁或月梁、挑尖  梁、抹角梁、麻叶头梁、太平梁，卷棚双步、四、六、八架梁等。",
+    "section": "unknown",
+    "para_index": 6326,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1圆、方桁(檩)指用圆、方木制作的脊桁(檩)、轩桁(檩)、檐桁(檩)、挑檐桁(檩)等桁(檩)条。 2替木又名连机，随梁枋又名夹底，承椽枋又名撩檐枋，扶脊木又称帮脊木。",
+    "section": "unknown",
+    "para_index": 6448,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1圆(方)搁栅指用圆(方)制作的楼、地板稻天棚主龙骨，又称楞木。",
+    "section": "unknown",
+    "para_index": 6492,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1戗角区域是指屋顶平面图中角部檐口斜出升高的区域，正身椽飞及翼角椽飞以起翘处为分界。 2翘飞椽又名立脚飞椽，翼角椽又名摔网椽。",
+    "section": "unknown",
+    "para_index": 6623,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1戗角区域是指屋顶平面图中角部檐口斜出升高的区域。",
+    "section": "unknown",
+    "para_index": 6804,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1斗拱又名牌科、铺作。其他科斗拱包括：溜金斗拱(琵琶科)、隔架斗拱、非传统做法斗拱等。 2撑弓类型分为：三角板形、长板形、圆柱形、方柱形等。",
+    "section": "unknown",
+    "para_index": 6943,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1栏杆封板系用于木栏杆里侧之封板，亦名裙板。",
+    "section": "unknown",
+    "para_index": 7311,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1支摘窗按槛窗(短窗)项目编码列项。",
+    "section": "unknown",
+    "para_index": 7658,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：坐凳面又名座槛面。",
+    "section": "unknown",
+    "para_index": 7751,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：鹅颈靠背又名美人靠，挂落按本表倒挂楣子列项。",
+    "section": "unknown",
+    "para_index": 7873,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：踢脚板及现代做法的木栏杆(栏板)按现行国家标准《房屋建筑与装饰工程工程量计算规范》 GB50854中的相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 7955,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：楹联又称对联，博古架又称多宝格。",
+    "section": "unknown",
+    "para_index": 8016,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1冷摊瓦、仰瓦夹梗、干搓瓦屋面按铺望瓦项目编码列项。",
+    "section": "unknown",
+    "para_index": 8177,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1屋面类型分为：走廊、平房、厅堂、大殿、亭(四角、多角)、塔顶等。 2砖胎灰塑脊按滚筒脊项目编码列项。",
+    "section": "unknown",
+    "para_index": 8665,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1琉璃屋脊类型指：正脊、垂脊、戗脊、角脊、围脊、博脊等。 2套兽又名吞头。",
+    "section": "unknown",
+    "para_index": 9012,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：细墁方砖又名砖细方砖。",
+    "section": "unknown",
+    "para_index": 9165,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：悬山建筑的镶嵌象眼板、柁档板油漆或彩画按上架构件项目单独编码列项。",
+    "section": "unknown",
+    "para_index": 10411,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：内外檐作法不同时应分别列项。",
+    "section": "unknown",
+    "para_index": 10557,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1上架构件包含以下构件：檩(桁)枋下皮以上(包括柱头)的枋、梁、随梁，瓜柱、柁墩(驼峰)、角",
+    "section": "unknown",
+    "para_index": 10642,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1木扶手应区分带托板与不带托板，分别编码列项。",
+    "section": "unknown",
+    "para_index": 11270,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：椽子、望板彩画当内外檐作法不同时应分别列项。",
+    "section": "unknown",
+    "para_index": 11535,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1上架构件包含以下构件：檩(桁)枋下皮以上(包括柱头)的枋、梁、随梁，瓜柱、柁墩(驼峰)、",
+    "section": "unknown",
+    "para_index": 11657,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1斗拱满刷素油及斗拱做彩画时其拱眼(荷包、眼边)、斜盖斗板及拽枋、单材拱掏里的油漆部分 均按斗拱油漆项目单独编码列项。",
+    "section": "unknown",
+    "para_index": 11835,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1同一个单位工程使用综合脚手架时，不再使用外脚手架、里脚手架等单项脚手架。",
+    "section": "unknown",
+    "para_index": 12254,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1支模高度在招标文件规定的预算定额基本高度以下者，可以不作描述。",
+    "section": "unknown",
+    "para_index": 12862,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1檐口高度是指交付施工场地标高至屋面檐口高度。",
+    "section": "unknown",
+    "para_index": 13017,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：1单层建筑物檐口高度超过20m,多层建筑物超过6层时，可按超高部分的建筑面积计算超高施 工增加。计算层数时，地下室不计入层数。",
+    "section": "unknown",
+    "para_index": 13070,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：相应专项设计不具备时，可按暂估量计算。",
+    "section": "unknown",
+    "para_index": 13242,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：本表所列项目应根据工程实际情况计算措施项目费用，需分摊的合理计算摊销费用。",
+    "section": "unknown",
+    "para_index": 13360,
+    "standard": "GB50855"
+  },
+  {
+    "text": "注：抛丸清理室设备质量应包括抛丸机、回转台、斗式提升机、螺旋输送机、电动小车等设备以及框架、 平台、梯子、栏杆、漏斗、漏管等金属结构件的总质量。",
+    "section": "unknown",
+    "para_index": 1178,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1直联式风机的质量包括本体及电动机、底座的总质量。",
+    "section": "unknown",
+    "para_index": 1780,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：直联式泵的质量包括本体、电动机及底座的总质量；非直联式的不包括电动机质量；深井泵的质量 包括本体、电动机、底座及设备扬水管的总质量。",
+    "section": "unknown",
+    "para_index": 1905,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1设备质量包括同一底座上主机、电动机、仪表盘及附件、底座等的总质量，但立式及L型压缩 机、螺杆式压缩机、离心式压缩机不包括电动机等动力机械的质量。",
+    "section": "unknown",
+    "para_index": 1976,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：附属设备钢结构及导轨，应按本规范附录C静置设备与工艺金属结构制作安装工程相关项目编码 列项。",
+    "section": "unknown",
+    "para_index": 2164,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：附属设备钢结构及导轨，应按本规范附录C静置设备与工艺金属结构制作安装工程相关项目编码 列项。",
+    "section": "unknown",
+    "para_index": 2296,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：附属设备钢结构及导轨，应按本规范附录C静置设备与工艺金属结构制作安装工程相关项目编码 列项。",
+    "section": "unknown",
+    "para_index": 2685,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：结构形式指链条炉、煤粉炉。",
+    "section": "unknown",
+    "para_index": 3139,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：中压锅炉分部试验及试运包括：锅炉清洗、锅炉水压试验、风压试验、锅炉的烘炉、碱煮炉以及蒸汽 严密性试验和安全门调整。",
+    "section": "unknown",
+    "para_index": 3226,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：汽轮发电机组空负荷试运包括：危急保安器试运、给水泵组试运、润滑油系统、真空系统试运、汽轮  机汽封系统试运、调速系统试运、发电机水冷系统试运、低压缸喷水的试运、其他相关项目试运。",
+    "section": "unknown",
+    "para_index": 3883,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：循环水泵房入口设备安装包括：旋转滤网、钢闸门和清污机的安装。",
+    "section": "unknown",
+    "para_index": 4091,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：凝聚澄清过滤系统设备安装包括：澄清器、过滤器、混合器、水箱、水泵、溶液泵、计量箱和计量装 置、加热器安装。",
+    "section": "unknown",
+    "para_index": 4861,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1机械过滤系统安装包括：机械过滤器、水箱、水泵和鼓风机安装。",
+    "section": "unknown",
+    "para_index": 4945,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：凝结水处理设备包括：离子交换器、再生器、过滤器、树脂贮存罐、树脂捕捉器、树脂喷射器、酸碱贮 存罐、计量箱、喷射器和水泵的安装。",
+    "section": "unknown",
+    "para_index": 5034,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：循环水处理及加药设备包括：钠离子软化器、食盐溶解过滤器、加药设备、凝汽器铜管镀膜设备、空 压机和起重设备安装。",
+    "section": "unknown",
+    "para_index": 5124,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：给水、炉水校正处理设备包括：汽水取样设备、炉内水处理装置、药液的制备、计量设备和输送泵的 安装。",
+    "section": "unknown",
+    "para_index": 5199,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：脱硫附属机械及辅助设备包括：增压风机、烟气换热器(GGH)、真空皮带脱水机、旋流器和循环浆 液泵的安装。",
+    "section": "unknown",
+    "para_index": 5341,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1散装和组装锅炉，不包括设备的包装材料、加固件的重量。",
+    "section": "unknown",
+    "para_index": 5437,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1本节在设置工程量清单项目时，项目名称应用该实体的本名称，项目特征应结合拟建工程的实 际情况予以描述。",
+    "section": "unknown",
+    "para_index": 5827,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1在设置工程量清单项目时，项目名称应用该实体的本名称，项目特征应结合拟建工程的实际情 况详细描述。",
+    "section": "unknown",
+    "para_index": 6238,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：废热锅炉的结构是指快装、半快装、散装，燃烧床形式是指单床、双床，单汽包、双汽包，工程量清单 描述时应结合拟建工程实际予以描述。",
+    "section": "unknown",
+    "para_index": 6405,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1盘管式加热器安装不扣除管件所占长度。",
+    "section": "unknown",
+    "para_index": 6694,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1球形罐组装的质量包括球壳板、支柱、拉杆、短管、加强板的全部质量，不扣除人孔、接管孔洞面 积所占质量。",
+    "section": "unknown",
+    "para_index": 6775,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1构造形式指：螺旋式、直升式。",
+    "section": "unknown",
+    "para_index": 6866,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1联合平台是指两台以上设备的平台互相连接组成的，便于检修、操作使用的平台。联合平台质",
+    "section": "unknown",
+    "para_index": 7056,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1容器的安装质量包括本体、附件、绝热、内衬及随设备吊装的管道、支架、临时加固措施、索具及 平衡梁的质量，但不包括安装后所安装的内件和填充物的质量。",
+    "section": "unknown",
+    "para_index": 7162,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：撬块质量包括撬块本体钢结构及其连接器的质量，以及撬块上已安装的设备、工艺管道、阀门、管 件、螺栓、垫片、电气、仪表部件和梯子、平台等金属结构的全部质量。",
+    "section": "表 C.9      撬块安装(编码：030309)",
+    "para_index": 7198,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：拍片张数按设计规定计算的探伤焊缝总长度除以胶片的有效长度。设计无规定的，胶片有效长度 按250mm计算。",
+    "section": "unknown",
+    "para_index": 7313,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：变压器油如需试验、化验、色谱分析应按本规范附录N措施项目相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 7584,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1空气断路器的储气罐及储气罐至断路器的管路应按本规范附录H工业管道工程相关项目编 码列项。",
+    "section": "unknown",
+    "para_index": 7971,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1软母线安装预留长度见表D.15.7-1。",
+    "section": "unknown",
+    "para_index": 8187,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1控制开关包括：自动空气开关、刀型开关、铁壳开关、胶盖刀闸开关、组合控制开关、万能转换开 关、风机盘管三速开关、漏电保护开关等。",
+    "section": "unknown",
+    "para_index": 8912,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1可控硅调速直流电动机类型指一般可控硅调速直流电动机、全数字式控制可控硅调速直流电 动机。",
+    "section": "unknown",
+    "para_index": 9273,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1支架基础铁件及螺栓是否浇注需说明。 2滑触线安装预留长度见表D.15.7-4。",
+    "section": "unknown",
+    "para_index": 9330,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1电缆穿刺线夹按电缆头编码列项。",
+    "section": "unknown",
+    "para_index": 9517,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1利用桩基础作接地极，应描述桩台下桩的根数，每桩台下需焊接柱筋根数，其工程量按柱引下 线计算；利用基础钢筋作接地极按均压环项目编码列项。",
+    "section": "unknown",
+    "para_index": 9770,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1杆上设备调试，应按本附录D.14相关项目编码列项。 2架空导线预留长度见表D.15.7-7。",
+    "section": "unknown",
+    "para_index": 9943,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1配管、线槽安装不扣除管路中间的接线箱(盒)、灯头盒、开关盒所占长度。 2配管名称指电线管、钢管、防爆管、塑料管、软管、波纹管等。",
+    "section": "unknown",
+    "para_index": 10083,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1普通灯具包括圆球吸顶灯、半圆球吸顶灯、方形吸顶灯、软线吊灯、座灯头、吊链灯、防水吊灯、 壁灯等。",
+    "section": "unknown",
+    "para_index": 10436,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：铁构件适用于电气工程的各种支架、铁构件的制作安装。",
+    "section": "unknown",
+    "para_index": 10567,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1功率大于10kW电动机及发电机的启动调试用的蒸汽、电力和其他动力能源消耗及变压器空",
+    "section": "unknown",
+    "para_index": 10792,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1温度仪表规格需描述接触式温度计的尾长。 2物位检测仪表规格需描述仪表长度或测量范围。",
+    "section": "unknown",
+    "para_index": 12957,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：开关阀、电磁阀、伺服放大器，按调节阀编码列项。",
+    "section": "unknown",
+    "para_index": 13249,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：工业电视按本规范附录E建筑智能化工程相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 13770,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：本附录中的专用线缆敷设预留及附加长度见本规范附录D电气设备安装工程的表D.15.7-3、 表D.15.7-5、表D.15.7-8。",
+    "section": "unknown",
+    "para_index": 13973,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：仪表导压管敷设工程量计算不扣除阀门、管件所占长度。",
+    "section": "unknown",
+    "para_index": 14110,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：本节仪表附件是具有相对独立性的仪表附件(如压缩空气净化分配器等)。",
+    "section": "unknown",
+    "para_index": 14244,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：通风空调设备安装的地脚螺栓按设备自带考虑。",
+    "section": "unknown",
+    "para_index": 14549,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1风管展开面积，不扣除检查孔、测定孔、送风口、吸风口等所占面积；风管长度一律以设计图示 中心线长度为准(主管与支管以其中心线交点划分),包括弯头、三通、变径管、天圆地方等管件 的长度，但不包括部件所占的长度。风管展开面积不包括风管、管口重叠部分面积。风管渐缩  管：圆形风管按平均直径；矩形风管按平均周长。",
+    "section": "unknown",
+    "para_index": 14803,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1碳钢阀门包括：空气加热器上通阀、空气加热器旁通阀、圆形瓣式启动阀、风管蝶阀、风管止回   阀、密闭式斜插板阀、矩形风管三通调节阀、对开多叶调节阀、风管防火阀、各型风罩调节阀等。",
+    "section": "unknown",
+    "para_index": 15294,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管道工程量计算不扣除阀门、管件所占长度；室外埋设管道不扣除附属构筑物(井)所占长度；",
+    "section": "unknown",
+    "para_index": 15789,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管道工程量计算不扣除阀门、管件所占长度；方形补偿器以其所占长度列入管道安装工程量。 2压力试验按设计要求描述试验方法，如水压试验、气压试验、泄漏性试验、真空试验等。",
+    "section": "unknown",
+    "para_index": 15954,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管道工程量计算不扣除阀门、管件所占长度；方形补偿器以其所占长度列入管道安装工程量。 2压力试验按设计要求描述试验方法，如水压试验、气压试验、泄漏性试验、真空试验等。",
+    "section": "unknown",
+    "para_index": 16012,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管件包括弯头、三通、四通、异径管、管接头、管帽、方形补偿器弯头、管道上仪表一次部件、仪表 温度计扩大管制作安装等。",
+    "section": "unknown",
+    "para_index": 16280,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管件包括弯头、三通、四通、异径管、管接头、管帽、方形补偿器弯头、管道上仪表一次部件、仪表 温度计扩大管制作安装等。",
+    "section": "unknown",
+    "para_index": 16456,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管件包括弯头、三通、异径管、管接头、管帽、方形补偿器弯头、管道上仪表一次部件、仪表温度 计扩大制作安装等。",
+    "section": "unknown",
+    "para_index": 16512,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1减压阀直径按高压侧计算。",
+    "section": "unknown",
+    "para_index": 16614,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1减压阀直径按高压侧计算。",
+    "section": "unknown",
+    "para_index": 16733,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：减压阀直径按高压侧计算。",
+    "section": "unknown",
+    "para_index": 16813,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1法兰焊接时，要在项目特征中描述法兰的连接形式(平焊法兰、对焊法兰、翻边活动法兰及焊环 活动法兰等),不同连接形式应分别列项。",
+    "section": "unknown",
+    "para_index": 16979,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1法兰焊接时，要在项目特征中描述法兰的连接形式(平焊法兰、对焊法兰等),不同连接形式应 分别列项。",
+    "section": "unknown",
+    "para_index": 17093,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1配法兰的盲板不计安装工程量。",
+    "section": "unknown",
+    "para_index": 17172,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：管件包括弯头、三通、异 径 管 ；异径管按大头口径计算，三通按主管口径计算。",
+    "section": "unknown",
+    "para_index": 17426,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1单件支架质量有100kg以下和100kg以上时，应分别列项。",
+    "section": "unknown",
+    "para_index": 17469,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：探伤项目包括固定探伤仪支架的制作、安装。",
+    "section": "unknown",
+    "para_index": 17614,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1冷排管制作安装项目中包括钢带退火，加氨，冲、套翅片，按设计要求计算。",
+    "section": "unknown",
+    "para_index": 17731,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1水灭火管道工程量计算，不扣除阀门、管件及各种组件所占长度以延长米计算。",
+    "section": "unknown",
+    "para_index": 17971,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1气体灭火管道工程量计算，不扣除阀门、管件及各种组件所占长度以延长米计算。",
+    "section": "unknown",
+    "para_index": 18216,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1泡沫灭火管道工程量计算，不扣除阀门、管件及各种组件所占长度以延长米计算。",
+    "section": "unknown",
+    "para_index": 18399,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1消防报警系统配管、配线、接线盒均应按本规范附录D电气设备安装工程相关项目编码列项。 2消防广播及对讲电话主机包括功放、录音机、分配器、控制柜等设备。",
+    "section": "unknown",
+    "para_index": 18678,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1自动报警系统，包括各种探测器、报警器、报警按钮、报警控制器、消防广播、消防电话等组成的 报警系统；按不同点数以系统计算。",
+    "section": "unknown",
+    "para_index": 18741,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1安装部位，指管道安装在室内、室外。",
+    "section": "unknown",
+    "para_index": 19012,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1单件支架质量100kg以上的管道支吊架执行设备支吊架制作安装。",
+    "section": "unknown",
+    "para_index": 19097,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1法兰阀门安装包括法兰连接，不得另计。阀门安装如仅为一侧法兰连接时，应在项目特征中 描述。",
+    "section": "unknown",
+    "para_index": 19331,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1成品卫生器具项目中的附件安装，主要指给水附件包括水嘴、阀门、喷头等，排水配件包括存水 弯、排水栓、下水口等以及配备的连接管。",
+    "section": "unknown",
+    "para_index": 19574,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1铸铁散热器，包括拉条制作安装。",
+    "section": "unknown",
+    "para_index": 19733,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1变频给水设备、稳压给水设备、无负压给水设备安装，说明：",
+    "section": "unknown",
+    "para_index": 19953,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1沸水器、消毒器适用于容积式沸水器、自动沸水器、燃气消毒器等。",
+    "section": "unknown",
+    "para_index": 20173,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1气体汇流排适用于氧气、二氧化碳、氮气、笑气、氩气、压缩空气等医用气体汇流排安装。 2空气过滤器适用于医用气体预过滤器、精过滤器、超精过滤器等安装。",
+    "section": "unknown",
+    "para_index": 20339,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1由采暖管道、阀门及供暖器具组成采暖工程系统。",
+    "section": "unknown",
+    "para_index": 20379,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：铁塔架设，安装位置分楼顶、地上；不含铁塔基础施工，应按现行国家标准《房屋建筑与装饰工程工 程量计算规范》GB50854相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 21796,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1管道刷油以米计算，按图示中心线以延长米计算，不扣除附属构筑物、管件及阀门等所占长度。 2涂刷部位：指涂刷表面的部位，如设备、管道等部位。",
+    "section": "unknown",
+    "para_index": 22831,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1分层内容：指应注明每一层的内 容 ，如底漆、中间漆、面漆及玻璃丝布等内容。",
+    "section": "unknown",
+    "para_index": 23007,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1如设计对胶液配合比、材料品种有特殊要求需说明。 2遍数指底漆、面漆、涂刮腻子、缠布层数。",
+    "section": "unknown",
+    "para_index": 23075,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1热硫化橡胶板如设计要求采取特殊硫化处理需注明。 2塑料板搭接如设计要求采取焊接需注明。",
+    "section": "unknown",
+    "para_index": 23232,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1设备形式指立式、卧式或球形。",
+    "section": "unknown",
+    "para_index": 23440,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1.由国家或地方检测部门进行的各类检测，指安装工程不包括的属经营服务性项目，如通电测 试、防雷装置检测、安全、消防工程检测、室内空气质量检测等。",
+    "section": "unknown",
+    "para_index": 23748,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1本表所列项目应根据工程实际情况计算措施项目费用，需分摊的应合理计算摊销费用。 2施工排水是指为保证工程在正常条件下施工而采取的排水措施所发生的费用。",
+    "section": "unknown",
+    "para_index": 23879,
+    "standard": "GB50856"
+  },
+  {
+    "text": "注：1沟槽、基坑、一般土方的划分为：底宽≤7m且底长>3倍底宽为沟槽，底长≤3倍底宽且底面积 ≤150m²为基坑。超出上述范围则为一般土方。",
+    "section": "unknown",
+    "para_index": 587,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：本表土的名称及其含义按现行国家标准《岩土工程勘察规范》GB 50021—2001(2009年局部修订 版)定义。",
+    "section": "表 A.1-1      土壤分类表",
+    "para_index": 625,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1沟槽、基坑中土类别不同时，分别按其放坡起点、放坡系数，依不同土类别厚度加权平均计算。",
+    "section": "unknown",
+    "para_index": 660,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1管道结构宽：有管座按管道基粥外缘，无管座按管道外径计算；构筑物按基础外缘计算。",
+    "section": "unknown",
+    "para_index": 705,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1沟槽、基坑、一般石方的划分为：底宽≤7m且底长>3倍底宽为沟槽；底长≤3倍底宽且底面积 ≤150m²为基坑；超出上述范围则为一般石方。",
+    "section": "unknown",
+    "para_index": 751,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注 ：本表依据现行国家标准《工程岩体分级级标准》GB50218—94和《岩土工程勘察规范》GB50021— 2001(2009年局部修订版)整理。",
+    "section": "unknown",
+    "para_index": 797,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1填方材料品种为土时，可以不描述。",
+    "section": "unknown",
+    "para_index": 853,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1地层情况按表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层所占比",
+    "section": "unknown",
+    "para_index": 1339,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1道路工程厚度应以压实后为准。",
+    "section": "unknown",
+    "para_index": 1534,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：水泥混凝土路面中传力杆和拉杆的制作、安装应按附录J钢筋工程中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 1708,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1本节清单项目如发生破除混凝土路面、土石方开挖、回填夯实等，应分别按附录K拆除工程及 附录A土石方工程中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 2317,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1地层情况按表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层所占比",
+    "section": "unknown",
+    "para_index": 2751,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1地层情况按表A.1-1和表A.2-1的规定，并根据岩土工程勘察报告按单位工程各地层所占比",
+    "section": "unknown",
+    "para_index": 3058,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：台帽、台盖梁均应包括耳墙、背墙。",
+    "section": "unknown",
+    "para_index": 3432,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1干砌块料、浆砌块料和砖砌体应根据工程部位不同，分别设置清单缘码。 2本节清单项目中“垫层”指碎石、块石等非混凝土类垫层。",
+    "section": "unknown",
+    "para_index": 3740,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注 ：除箱涵顶进土方外，顶进工作坑等土方应按附录A土石方工程中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 3917,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：如遇本清单项目缺项时，可按现行国家标准《房屋建筑与装饰工程工程量计算规范》GB 50854中 相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 4187,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：支座垫石混凝土按C.3混凝土基础项目编码列项。",
+    "section": "unknown",
+    "para_index": 4350,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注浆",
+    "section": "unknown",
+    "para_index": 4474,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：弃碴运距可以不描述，但应注明由投标人根据施工现场实际情况自行考虑决定报价。",
+    "section": "unknown",
+    "para_index": 4484,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：遇本节清单项目未列的砌筑构筑物时，应按本规范附录C桥涵工程中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 4765,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1衬砌壁后压浆清单项目在编制工程量清单时，其工程数量可为暂估量，结算时按现场签证数量 计算。",
+    "section": "unknown",
+    "para_index": 5086,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：汾井垫层按本规范附录C济涵工程中相关项即编码列项。",
+    "section": "unknown",
+    "para_index": 5453,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注 ：1隧道洞内道路路面铺装应按本规范附录3道路工程相关清单项目编码列项。",
+    "section": "unknown",
+    "para_index": 5591,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1管道架空跨越铺设的支架制作、安装及支架基础、垫层应按本规范附录E.3支架制作及安装相 关清单项目编码列项。",
+    "section": "unknown",
+    "para_index": 6804,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注 ：040502013项目的凝水井应按本规范附录E.4管道附属构筑物相关清单项目编码列项。",
+    "section": "unknown",
+    "para_index": 7087,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：管道附属构筑物为标准定型附属构筑物时，在项目特征中应标注标准图集编号及页码。",
+    "section": "unknown",
+    "para_index": 7569,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1沉井混凝土地梁工程量，应并入底板内计算。  2各类垫层应按本规范附录C桥涵工程相关编码列项。",
+    "section": "unknown",
+    "para_index": 8155,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1边坡处理应按附录C桥涵工程中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 9157,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1小电器包括按钮、测量表计、继电器、电磁锁、屏上辅助设备、辅助电压互感器、小型安全变压 器等。",
+    "section": "unknown",
+    "para_index": 10242,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：导线架设预留长度见表H.8.4-2。",
+    "section": "unknown",
+    "para_index": 10394,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1咆缆穿刺线夹按电缆中间头编码列项。",
+    "section": "unknown",
+    "para_index": 10592,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1配管安装不扣除管路中间的接线箱(盒)、灯头盒、开关盒所占长度。",
+    "section": "unknown",
+    "para_index": 10737,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1常规照明灯是指安装在高度≤15m的灯杆上的照明器具。",
+    "section": "unknown",
+    "para_index": 10907,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：接地母线、引下线附加长度见表H.8-5。",
+    "section": "unknown",
+    "para_index": 11044,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1现浇构件中伸出构件的锚固钢筋、预制构件的吊钩和固定位置的支撑钢筋等，应并入钢筋工程",
+    "section": "unknown",
+    "para_index": 11502,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：1拆除路面、人行道及管道清单项目的工作内容中均不包括基础及垫层拆 除 ，发坐时按本章湘应",
+    "section": "unknown",
+    "para_index": 11657,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：各类井的井深按井底基础以上至井盖顶的高度计算。",
+    "section": "unknown",
+    "para_index": 11732,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：原槽浇灌的混凝土基础、垫层不计算模板。",
+    "section": "unknown",
+    "para_index": 12230,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：设计注明轨道铺设长度的，按设计图示尺寸计算；设计未注明时可按设计图示隧道长度以延长米 计算，并注明洞外轨道铺设长度由投标人根据施工组织设计自定。",
+    "section": "unknown",
+    "para_index": 12429,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：相应专项设计不具备时，可按暂估量计算。",
+    "section": "unknown",
+    "para_index": 12572,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：地下管线交叉处理指施工过程中对现有施工场地范围内各种地下交叉管线进行如固及延理所发 生的费用，但不包括地下管线或设施改、移发生的费用。",
+    "section": "表 L.8     处理、监测、监控(编码：D41198)",
+    "para_index": 12600,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：本表所列项目应根据工程实际情况计算措施项目费用，需分摊的应合理计算摊销费用。",
+    "section": "unknown",
+    "para_index": 12702,
+    "standard": "GB50857"
+  },
+  {
+    "text": "注：整理绿化用地项目包含厚度≤300mm回填土，厚度>300mm回填土，应按现行国家标准《房屋建 筑与装饰工程工程量计算规范》GB50854相应项目编码列项。",
+    "section": "unknown",
+    "para_index": 634,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1挖土外运、借土回填、挖(凿)土(石)方应包括在相关项目内。",
+    "section": "unknown",
+    "para_index": 1033,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1挖填土石方应按现行国家标准《房屋建筑与装饰工程工程量计算规范》GB50854附录A相关 项目编码列项。",
+    "section": "unknown",
+    "para_index": 1122,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1园路、园桥工程的挖土方、开凿石方、回填等应按现行国家标准《市政工程工程量计算规范》 GB 50857相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 1464,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1驳岸工程的挖土方、开凿石方 、回填等应按现行国家标准《房屋建筑与装饰工程工程量计算规 范》GB50854附录A相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 1592,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1假山(堆筑土山丘除外)工程的挖土方、开凿石方、回填等应按现行国家标准《房屋建筑与装饰 工程工程量计算规范》GB 50854相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 1811,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1木构件连接方式应包括：开榫连接、铁件连接、扒钉连接、铁钉连接。",
+    "section": "unknown",
+    "para_index": 1941,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1柱顶石(嗓蹬石)、钢筋混凝土屋面板、钢筋混凝土亭屋面板、木柱、木屋架、钢柱、钢屋架、屋面 木基层和防水层等，应按现行国家标准《房屋建筑与装饰工程工程量计算规范》GR 50854中相 关项目编码列项。",
+    "section": "unknown",
+    "para_index": 2149,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：花架基础、玻璃天棚、表面装饰及涂料项目应按现行国家标准《房屋建筑与装饰工程工程量计算规 范》GB 50854中相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 2289,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：木制飞来椅按现行国家标准《仿古建筑工程工程量计算规范》GB 50855相关项目编码列项。",
+    "section": "unknown",
+    "para_index": 2630,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：1喷泉水池应按现行国家标准《房屋建筑与装饰工程工程量计算规范》GB 50854中相关项目编 码列项。",
+    "section": "unknown",
+    "para_index": 2757,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：砌筑果皮箱，放置盆景的须弥座等，应按砖石砌小摆设项目编码列项。",
+    "section": "unknown",
+    "para_index": 3231,
+    "standard": "GB50858"
+  },
+  {
+    "text": "注：本表所列项目应根据工程实际情况计算措施项目费用，需分摊的应合理计算摊销费用。",
+    "section": "unknown",
+    "para_index": 3795,
+    "standard": "GB50858"
+  }
+]
